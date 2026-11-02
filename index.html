@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR SEDERHANA</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main class="kalkulator">
+        <h1> KALKULATOR</h1>
+        <input type="number" id="angka1" placeholder="Masukkan angka pertama"><br>
+        <input type="number" id="angka2" placeholder="Masukkan angka kedua"><br>
+
+        <button onclick="tambahAngka()">Tambah</button>
+        <button onclick="kurangAngka()">Kurang</button>
+        <button onclick="kaliAngka()">Kali</button>
+        <button onclick="bagiAngka()">Bagi</button>
+        <button onclick="modulusAngka()">Modulus</button>
+        <button onclick="persenAngka()">Persen</button>
+        <button onclick="reset()">Reset</button>
+
+        <button type="button" id="hasil" class="hasil" disabled>Hasil</button><br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

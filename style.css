@@ -1,0 +1,101 @@
+body {
+    background-color: #fce4ec;
+    min-height: 100vh;
+    margin: 0;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.kalkulator {
+    box-sizing: border-box;
+    width: min(100%, 420px);
+    padding: 28px 24px;
+    border: 1px solid #f7d1df;
+    border-radius: 24px;
+    background-color: rgba(255, 249, 251, 0.9);
+    box-shadow: 0 12px 30px rgba(190, 65, 112, 0.16);
+}
+
+.kalkulator h1 {
+    margin-top: 0;
+    color: #a93464;
+}
+
+input[type="number"] {
+    box-sizing: border-box;
+    width: min(280px, 85%);
+    margin: 6px 0;
+    padding: 12px 16px;
+    border: 2px solid #f3b2c9;
+    border-radius: 14px;
+    background-color: #fff9fb;
+    color: #613b4b;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 3px 8px rgba(190, 65, 112, 0.1);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="number"]::placeholder {
+    color: #b58a9a;
+}
+
+input[type="number"]:focus {
+    border-color: #ec6f9e;
+    box-shadow: 0 0 0 4px rgba(236, 111, 158, 0.18);
+}
+
+button {
+    margin: 6px 4px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 999px;
+    background-color: #ec6f9e;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(190, 65, 112, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #d95789;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(190, 65, 112, 0.28);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(190, 65, 112, 0.2);
+}
+
+button:focus-visible {
+    outline: 3px solid #a93464;
+    outline-offset: 3px;
+}
+
+button[onclick="reset()"] {
+    background-color: #b77aa8;
+}
+
+button[onclick="reset()"]:hover {
+    background-color: #9e638f;
+}
+
+button.hasil,
+button.hasil:hover,
+button.hasil:active {
+    display: block;
+    min-width: min(220px, 85%);
+    margin: 12px auto 6px;
+    background-color: #fff9fb;
+    color: #a93464;
+    cursor: default;
+    box-shadow: 0 3px 8px rgba(190, 65, 112, 0.12);
+    transform: none;
+}
